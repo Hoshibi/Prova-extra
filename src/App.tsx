@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 //Pages
-import Home from './pages/Home';
-import CarDetail from './pages/CarDetail';
+import Home from '@pages/Home';
+import CarDetail from '@pages/CarDetail';
 
 function App() {
   return (
