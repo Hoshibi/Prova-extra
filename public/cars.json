@@ -1,0 +1,221 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "brand": "Ferrari",
+            "model": "California",
+            "price": 725,
+            "sideImage": "./assets/sideImages/Ferrari_california-closed.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Red"
+                },
+                {
+                    "index": 2,
+                    "color": "Yellow"
+                },
+                {
+                    "index": 3,
+                    "color": "Gray"
+                }
+
+            ] 
+        },
+        {
+            "id": 2,
+            "brand": "Porsche",
+            "model": "911 TURBO S",
+            "price": 725,
+            "sideImage": "./assets/sideImages/Porsche_911TurboS-White.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "White"
+                }
+            ] 
+        },
+        {
+            "id": 3,
+            "brand": "Porsche",
+            "model": "911 TURBO S",
+            "price": 725,
+            "sideImage": "./assets/sideImages/Porsche_911TurboS-OrangeBlack.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Orange"
+                }
+            ] 
+        },
+        {
+            "id": 4,
+            "brand": "Porsche",
+            "model": "911 TURBO S",
+            "price": 725,
+            "sideImage": "../assets/sideImages/Porsche_911TurboS-Gray.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Gray"
+                }
+            ] 
+        },
+        {
+            "id": 5,
+            "brand": "Porsche",
+            "model": "911 GT3 RS",
+            "price": 825,
+            "sideImage": "../assets/sideImages/Porsche_911TurboS-Golden.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Golden"
+                }
+            ] 
+        },
+        {
+            "id": 6,
+            "brand": "Bentley",
+            "model": "Continental GT",
+            "price": 825,
+            "sideImage": "./assets/sideImages/Bentley_ContinentalGT-Blue.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Blue"
+                }
+            ] 
+        },
+        {
+            "id": 7,
+            "brand": "BMW",
+            "model": "M1 Competition",
+            "price": 825,
+            "sideImage": "./assets/sideImages/BMW-M1Competition-White.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "White"
+                }
+            ] 
+        },
+        {
+            "id": 8,
+            "brand": "Alfa Romeo",
+            "model": "4C Spider",
+            "price": 825,
+            "sideImage": "./assets/sideImages/AlfaRomeo_4CSpider-Yellow.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Yellow"
+                }
+            ] 
+        },
+        {
+            "id": 9,
+            "brand": "Mclaren",
+            "model": "P1 GTR",
+            "price": 925,
+            "sideImage": "./assets/sideImages/Mclaren_P1GTR-Blue.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Blue"
+                }
+            ] 
+        },
+        {
+            "id": 10,
+            "brand": "Lamborghini",
+            "model": "Aventador",
+            "price": 925,
+            "sideImage": "./assets/sideImages/Lamborghini_Aventador-Orange.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Orange"
+                }
+            ] 
+        },
+        {
+            "id": 11,
+            "brand": "Bugatti",
+            "model": "Veyron Spyder",
+            "price": 925,
+            "sideImage": "./assets/sideImages/Bugatti_VeyronSpyder-Blue.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Blue"
+                }
+            ] 
+        },
+        {
+            "id": 12,
+            "brand": "Chevrolet",
+            "model": "Corvett",
+            "price": 925,
+            "sideImage": "./assets/sideImages/Chevrolet_Corvett-White.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "White"
+                }
+            ] 
+        },
+        {
+            "id": 13,
+            "brand": "Ferrari",
+            "model": "California",
+            "price": 725,
+            "sideImage": "./assets/sideImages/Ferrari_california-open.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Red"
+                }
+            ] 
+        },
+        {
+            "id": 14,
+            "brand": "Rolls-Royce",
+            "model": "Wraith",
+            "price": 725,
+            "sideImage": "./assets/sideImages/RollsRoyce_Wraith-Red.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Red"
+                }
+            ] 
+        },
+        {
+            "id": 15,
+            "brand": "Porsche",
+            "model": "911 Turbo S",
+            "price": 725,
+            "sideImage": "./assets/sideImages/Porsche_911TurboS-White.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "White"
+                }
+            ] 
+        },
+        {
+            "id": 16,
+            "brand": "Mercedes-benz",
+            "model": "AMG GTS",
+            "price": 725,
+            "sideImage": "./assets/sideImages/MercedesBenz_AMGGTS-Gray.png",
+            "types": [
+                {
+                    "index": 1,
+                    "color": "Gray"
+                }
+            ] 
+        }
+    ]
+}
