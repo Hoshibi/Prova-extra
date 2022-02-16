@@ -1,18 +1,22 @@
 import React from "react";
 
 import { BsThreeDots } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 import { LinkContainer, Container, Brand, HeaderContainer, TypeCar, Model, BtnOptions, ImageContainer, ImageCar , FooterContainer, BtnBookNow, PriceContainer, Dollar, Price, PriceDay  } from "./styles";
 
 interface PropsType {
     brand: string,
     model: string,
     price: number,
-    imagem: string
+    imagem: string,
+    id: number
 }
 
-const Card: React.FC<PropsType> = ({brand, model, price, imagem}) => {
+const Card: React.FC<PropsType> = ({brand, model, price, imagem, id}) => {
+    const navigate = useNavigate();
+    
     return (
-        <LinkContainer >
+        <LinkContainer onClick={() => {navigate(`/details/${id}`)}}>
             <Container>
                 <HeaderContainer>
                     <TypeCar>

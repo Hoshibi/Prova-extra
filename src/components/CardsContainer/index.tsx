@@ -25,7 +25,7 @@ const CardsContainer: React.FC = () => {
         <Container>
             {infoCar.map((info,index) => {
                 console.log(info)
-                return <Card key={index} brand={info["brand"]} model={info["model"]} price={info["price"]} imagem={info["sideImage"]}/>
+                return <Card key={index} brand={info["brand"]} model={info["model"]} price={info["price"]} imagem={info["sideImage"]} id={info["id"]}/>
             })}
         </Container>
     );

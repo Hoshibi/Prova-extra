@@ -11,7 +11,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/detail' element={<CarDetail />} />
+        <Route path='/detail/:id' element={<CarDetail />} />
       </Routes>
       <GlobalStyle />
     </>
