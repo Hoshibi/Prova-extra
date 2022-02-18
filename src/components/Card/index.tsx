@@ -2,7 +2,7 @@ import React from "react";
 
 import { BsThreeDots } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import { LinkContainer, Container, Brand, HeaderContainer, TypeCar, Model, BtnOptions, ImageContainer, ImageCar , FooterContainer, BtnBookNow, PriceContainer, Dollar, Price, PriceDay  } from "./styles";
+import { Container, Brand, HeaderContainer, TypeCar, Model, BtnOptions, ImageContainer, ImageCar , FooterContainer, BtnBookNow, PriceContainer, Dollar, Price, PriceDay  } from "./styles";
 
 interface PropsType {
     brand: string,
@@ -16,14 +16,18 @@ const Card: React.FC<PropsType> = ({brand, model, price, imagem, id}) => {
     const navigate = useNavigate();
     
     return (
-        <LinkContainer onClick={() => {navigate(`/details/${id}`)}}>
-            <Container>
+            <Container onClick={() => {navigate(`/detail/${id}`)}}>
                 <HeaderContainer>
                     <TypeCar>
                         <Brand>{brand}</Brand>
                         <Model>{model.toUpperCase()}</Model>
                     </TypeCar>
-                    <BtnOptions>
+                    <BtnOptions onClick={
+                        (event) => {
+                            alert("Clickou no Options");
+                            event.stopPropagation();
+                        }
+                    }>
                         <BsThreeDots className="btnDots"/>
                     </BtnOptions>
                 </HeaderContainer>
@@ -39,7 +43,6 @@ const Card: React.FC<PropsType> = ({brand, model, price, imagem, id}) => {
                     </PriceContainer>
                 </FooterContainer>
             </Container>
-        </LinkContainer>
     );
 }
 

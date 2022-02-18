@@ -1,21 +1,16 @@
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const LinkContainer = styled.button `
+export const Container = styled.div `
+    height: 186px;
+    width: 14.75rem;
     margin-right: 25px;
     margin-bottom: 32px;
-    border-width: 0px;
-    border-radius: 30px;
-    background-color: transparent;
-    width: 269px;
-`;
-
-export const Container = styled.div `
-    height: 196px;
     padding: 23px 17px 0px 17px;
     background-color: #F8F8FA;
     border-radius: 20px;
     font-family: 'Segoe UI';
+    cursor: pointer;
 
     &:hover {
         background: linear-gradient(70deg, #ADADED, #D7C9F1);
@@ -27,6 +22,18 @@ export const Container = styled.div `
         .btnDots {
             color: #656469;
         }
+    }
+
+    @media (min-width: 1222px) and (max-width: 1344px) {
+        width: 24vw;
+    }
+
+    @media (min-width: 755px) and (max-width: 1221px) {
+        width: 28vw;
+    }
+
+    @media (min-width: 375px) and (max-width: 755px) {
+        width: 71vw;
     }
 `;
 
@@ -55,15 +62,17 @@ export const Model = styled.p `
 export const BtnOptions = styled.button `
     background-color: transparent;
     border-width: 0px;
-
-    &:hover {
-        opacity: 0.6;
-    }
+    z-index: 1;
+    cursor: pointer;
 
     & svg {
         font-size: 28px;
         color: #C8C8CA;
         opacity: 64%;
+    }
+
+    &:hover{
+        opacity: 0.7;   
     }
 `;
 
@@ -77,7 +86,6 @@ export const ImageContainer = styled.div `
 `;
 
 export const ImageCar = styled.img `
-    height: 100%;
     width: 90%;
 `;
 
