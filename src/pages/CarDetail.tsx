@@ -1,9 +1,10 @@
-import React from "react";
+import { DetailComponent, Navbar } from "@components/index"
 
 function CarDetail() {
     return(
         <>
-            <h1>Car Detail</h1>
+            <Navbar />
+            <DetailComponent />
         </>
     );
 }
