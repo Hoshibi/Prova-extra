@@ -1,7 +1,4 @@
-import React from "react";
-import Navbar from "@components/Navbar";
-import CardsContainer from "@components/CardsContainer";
-import BtnFloating from "@components/BtnFloating";
+import { Navbar, CardsContainer, BtnFloating } from "@components/index";
 
 function Home() {
     return(
