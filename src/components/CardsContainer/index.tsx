@@ -1,30 +1,21 @@
-import React, { useCallback, useEffect, useState } from "react";
-import axios from 'axios';
+import React, { useEffect} from "react";
 
 import Card from "@components/Card";
 import { Container } from "./styles";
+import { RootStateOrAny, useDispatch, useSelector } from "react-redux";
+import { getInfoCars } from '@store/cars-actions';
 
 const CardsContainer: React.FC = () => {
-    const [infoCar, getInfoCar] = useState([]);
+    const dispatch = useDispatch();
+    const infoCars = useSelector((state: RootStateOrAny) => state.cars.infoCars);
     
-    const getCar = useCallback(async () => {
-        axios.get('./cars.json')
-          .then(function (response) {
-            getInfoCar(response.data.cars);
-          })
-          .catch(function (error) {
-            console.log(error);
-        })
-    }, []);
-
     useEffect(() => {
-        getCar();
-    }, [getCar]);
+        dispatch(getInfoCars());
+    }, [dispatch]);
 
     return (
         <Container>
-            {infoCar.map((info,index) => {
-                console.log(info)
+            {infoCars.map((info:any,index:number) => {
                 return <Card key={index} brand={info["brand"]} model={info["model"]} price={info["price"]} imagem={info["sideImage"]} id={info["id"]}/>
             })}
         </Container>
