@@ -11,6 +11,7 @@ export const Container = styled.button `
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     position: fixed;
     right: 5rem;
@@ -25,5 +26,13 @@ export const Container = styled.button `
     &:hover {
         background-color: #c68ee6;
         opacity: 0.7;
+    }
+
+    @media (min-width: 251px) and (max-width: 755px) {
+        height: 63px;
+        width: 63px;
+        position: fixed;
+        right: 2rem;
+        bottom: 3rem;
     }
 `;
